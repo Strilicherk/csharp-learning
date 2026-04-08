@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="Acumulator/Accumulator.csproj" />
+  <Project Path="Draw/Draw.csproj" />
+  <Project Path="EvenNumbers/EvenNumbers.csproj" />
+  <Project Path="Exercise1/Lottery.csproj" />
+  <Project Path="OddNumbers/OddNumbers.csproj" />
+  <Project Path="Poll/Poll.csproj" />
+  <Project Path="Power/Power.csproj" />
+</Solution>

@@ -1,0 +1,14 @@
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\bin\Debug\net8.0\01-variaveis-estruturas-condicionais.exe
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\bin\Debug\net8.0\01-variaveis-estruturas-condicionais.deps.json
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\bin\Debug\net8.0\01-variaveis-estruturas-condicionais.runtimeconfig.json
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\bin\Debug\net8.0\01-variaveis-estruturas-condicionais.dll
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\bin\Debug\net8.0\01-variaveis-estruturas-condicionais.pdb
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.AssemblyInfo.cs
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.dll
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\refint\01-variaveis-estruturas-condicionais.dll
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.pdb
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\01-variaveis-estruturas-condicionais.genruntimeconfig.cache
+C:\Users\mathe\Desktop\C#-learning\01-variaveis-estruturas-condicionais\obj\Debug\net8.0\ref\01-variaveis-estruturas-condicionais.dll
