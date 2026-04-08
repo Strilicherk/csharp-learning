@@ -1,0 +1,15 @@
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\bin\Debug\net8.0\ExerciseArrays.exe
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\bin\Debug\net8.0\ExerciseArrays.deps.json
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\bin\Debug\net8.0\ExerciseArrays.runtimeconfig.json
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\bin\Debug\net8.0\ExerciseArrays.dll
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\bin\Debug\net8.0\ExerciseArrays.pdb
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.AssemblyInfo.cs
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.sourcelink.json
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.dll
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\refint\ExerciseArrays.dll
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.pdb
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ExerciseArrays.genruntimeconfig.cache
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\04-array\ArraysExercise\obj\Debug\net8.0\ref\ExerciseArrays.dll
