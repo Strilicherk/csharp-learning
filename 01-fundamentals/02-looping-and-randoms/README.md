@@ -1,51 +1,51 @@
-# Nivelamento - Laços de Repetição e Randômicos 📎
+# Leveling - Loops and Randoms 📎
 
-### 1) Loteria
-Crie um projeto C# (Console Application) chamado Loteria que:
-- Escolha um número entre 0 e 10.
-- Sorteie números de 0 a 10 até sortear o número escolhido.
-- A cada iteração exiba o número sorteado.
-- Quando acontecer o “acerto”, se a quantidade de vezes necessárias for:
-    - Até 3: exiba `Você é MUITO sortudo`
-    - Entre 4 e 10: exiba `Você é sortudo`
-    - Mais de 10: exiba `É melhor você parar de apostar e ir trabalhar`
+### 1) Lottery
+Create a C# project (Console Application) named Lottery that:
+- Chooses a number between 0 and 10.
+- Draws numbers from 0 to 10 until it draws the chosen number.
+- At each iteration, displays the drawn number.
+- When the "hit" happens, if the amount of times needed was:
+    - Up to 3: display `You are VERY lucky`
+    - Between 4 and 10: display `You are lucky`
+    - More than 10: display `You better stop betting and go to work`
 
-### 2) Acumulador
-Crie um projeto C# (Console Application) chamado Acumulador que:
-- Sorteie vários números aleatórios de 0 a 10 até sortear o número 0 e calcule a soma dos números sorteados. (Não é para usar vetores/arrays).
-- Exiba uma frase como esta: `A soma dos números é x`
+### 2) Accumulator
+Create a C# project (Console Application) named Accumulator that:
+- Draws several random numbers from 0 to 10 until it draws the number 0 and calculates the sum of the drawn numbers. (Do not use vectors/arrays).
+- Displays a phrase like this: `The sum of the numbers is x`
 
-### 3) Números Ímpares
-Crie um projeto C# (Console Application) chamado NumerosImpares que:
-- Usando o laço `for`, exiba todos os números ímpares entre 0 e 90.
+### 3) Odd Numbers
+Create a C# project (Console Application) named OddNumbers that:
+- Using a `for` loop, display all odd numbers between 0 and 90.
 
-### 4) Números Pares
-Crie um projeto C# (Console Application) chamado NumerosPares que:
-- Exiba todos os números pares de 0 a 40 usando o laço `while`.
+### 4) Even Numbers
+Create a C# project (Console Application) named EvenNumbers that:
+- Display all even numbers from 0 to 40 using a `while` loop.
 
-### 5) Potência
-Crie um projeto C# (Console Application) chamado Potencia que:
-- Apresente como resultado o valor de uma potência de uma base qualquer elevada a um expoente qualquer, ou seja, de BE, em que B é o valor da base e E o valor do expoente.
-- Considere apenas a entrada de valores inteiros e positivos.
-- Por exemplo: B = 2 e E = 5.
-- O programa deverá calcular e exibir o valor de 2 elevado a 5 = 32. (Não utilize métodos diretos do C#, como o `Math.Pow`).
+### 5) Power
+Create a C# project (Console Application) named Power that:
+- Presents as a result the value of a power of any base raised to any exponent, that is, of BE, where B is the base value and E the exponent value.
+- Consider only the input of positive integer values.
+- For example: B = 2 and E = 5.
+- The program must calculate and display the value of 2 raised to 5 = 32. (Do not use direct C# methods, such as `Math.Pow`).
 
-### 6) Sorteio
-Crie um projeto C# (Console Application) chamado Sorteio que:
-- Escolha um número de 1 a 100.
-- Realize 200 sorteios de números entre 1 e 100.
-- Ao final, exibir:
-    - Quando o número escolhido foi sorteado pela 1ª vez (apresente a posição do sorteio).
-    - Quantos números pares foram sorteados.
-    - Quantos números ímpares foram sorteados.
+### 6) Draw
+Create a C# project (Console Application) named Draw that:
+- Chooses a number from 1 to 100.
+- Performs 200 draws of numbers between 1 and 100.
+- At the end, display:
+    - When the chosen number was drawn for the 1st time (present the position of the draw).
+    - How many even numbers were drawn.
+    - How many odd numbers were drawn.
 
-### 7) Votação
-Crie um projeto C# (Console Application) chamado Votacao.
-Foi feita uma pesquisa para saber qual o sabor de pizza favorito entre os alunos da Faculdade:
-- Para votar no sabor mussarela, sorteie o valor 1.
-- Para votar no sabor calabresa, sorteie o valor 2.
-- Para votar no sabor quatro queijos, sorteie o valor 3.
+### 7) Voting
+Create a C# project (Console Application) named Voting.
+A survey was conducted to find out the favorite pizza flavor among the college students:
+- To vote for the mozzarella flavor, draw the value 1.
+- To vote for the pepperoni flavor, draw the value 2.
+- To vote for the four cheese flavor, draw the value 3.
 
-Sorteie os votos de 10 alunos diferentes (sem usar vetores/arrays) e exiba:
-- Quantos votos obteve cada sabor.
-- Qual o sabor favorito segundo a pesquisa.
+Draw the votes of 10 different students (without using vectors/arrays) and display:
+- How many votes each flavor received.
+- What is the favorite flavor according to the survey.

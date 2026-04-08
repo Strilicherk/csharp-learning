@@ -1,31 +1,29 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/xWvgFOoY)
-# Exercício - Herança 📎
+# Exercise - Inheritance 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar atributos e métodos.
-2. **Respeite** os nomes de atributos e métodos definidos no exercício.
-3. Tome **cuidado** com os **argumentos** especificados no exercício.
-   **Não** adicione argumentos não solicitados e mantenha a ordem definida no enunciado.
-4. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-5. As classes devem seguir as regras de encapsulamento.
+## General Guidelines: 🚨
+1. **Respect** the attribute and method names defined in the exercise.
+2. Be **careful** with the **arguments** specified in the exercise.
+   **Do not** add unsolicited arguments and keep the order defined in the prompt.
+3. Verify that there are **no compilation errors** in the project before submitting.
+4. The classes must follow encapsulation rules.
 
-## Exercício - Vendedor 🚩
+## Exercise - Seller 🚩
 
-Implemente o seguinte diagrama de classes:
+Implement the following class diagram:
 
 ![vendedor.png](vendedor.png)
 
-**Observação:** considere 0,05 = 5%, 0,1 = 10% para o valor da taxa
+**Note:** consider 0.05 = 5%, 0.1 = 10% for the rate value.
 
-Métodos da classe `VendedorComissao`:
+Methods of the `CommissionSeller` class:
 
-* calcularSalario:
-  * calcula o salário do vendedor conforme os atributos **vendas** e **taxa**.
-  * **vendas** é o total vendido, e **taxa** é comissão em cima das vendas.
+* CalculateSalary:
+  * calculates the seller's salary based on the **sales** and **rate** attributes.
+  * **sales** is the total sold, and **rate** is the commission percentage applied to the sales.
+  * **returns** `double`.
 
-Métodos da classe `VendedorComissaoMaisFixo`:
+Methods of the `BasePlusCommissionSeller` class:
 
-* calcularSalario:
-    * calcula o salário do vendedor conforme os atributos **vendas**, **taxa** e **salarioFixo**
-
-
+* CalculateSalary:
+  * calculates the seller's salary based on the **sales**, **rate**, and **baseSalary** attributes.
+  * **returns** `double`.

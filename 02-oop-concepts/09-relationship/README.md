@@ -1,63 +1,48 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/8nMnoIo-)
-# Exercício Relacionamento 📎
+# Exercise - Relationships 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar atributos e métodos.
-2. **Respeite** os nomes de atributos e métodos definidos no exercício.
-3. Tome **cuidado** com os **argumentos** especificados no exercício.
-   **Não** adicione argumentos não solicitados e mantenha a ordem definida no enunciado.
-4. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-5. As classes devem seguir as regras de encapsulamento.
+## General Guidelines: 🚨
+1. **Respect** the attribute and method names defined in the exercise.
+2. Be **careful** with the **arguments** specified in the exercise.
+   **Do not** add unsolicited arguments and keep the order defined in the prompt.
+3. Verify that there are **no compilation errors** in the project before submitting.
+4. The classes must follow encapsulation rules.
 
-## Carrinho 
+## Cart 
 
-Implemente o seguinte diagrama de classes:
+Implement the following class diagram:
 
-![Diagrama de Classes](carrinho.png)
+![Class Diagram](carrinho.png)
 
+### Methods of the `Product` class:
 
-### Métodos da classe `Produto`:
+* Must contain all properties (getters and setters).
 
-* Deve conter todos os getters e setters
+### Methods of the `Cart` class:
 
+- GetQuantity():
+  * **Returns** the quantity of `Product`s included in the `Cart` (`int`).
 
+- Add(product: Product):
+  * Adds the received product to the product list.
 
-### Métodos da classe `Carrinho`
+- ExistsByName(name: string):
+  * **Returns** whether a product exists inside the `Cart` by its name (`bool`).
+  * Must ignore uppercase and lowercase letters (case-insensitive).
 
-- `Integer getQuantidade()`:
+- GetQuantityByCategory(name: string):
+  * **Returns** the quantity of products of a specific category (`int`).
 
-  * **Retorna** a quantidade de `Produtos` incluídos no `Carrinho`
-
-
-- `void adicionar(Produto produto)`:
-  * Adiciona o produto recebido na lista de produtos
-
-
-- `Boolean existsPorNome(String nome)`:
-  * **Retorna** se um produto existe dentro do `Carrinho` pelo nome
-  * Deve ignorar letras maiúsculas e minúsculas (Case Insensitive)
-
+- Clear():
+  * Removes all products from the cart.
   
+- RemoveByName(name: string):
+  * Removes a product from inside the cart by its name.
+  * Must ignore uppercase and lowercase letters (case-insensitive).
 
-- `Integer getQuantidadePorCategoria(String nome)`:
-  * **Retorna** a quantidade produtos de uma determinada categoria
+- GetByName(name: string):
+  * **Returns** the product from the cart by its name (`Product`).
+  * If the product is not found, return `null`.
+  * Must ignore uppercase and lowercase letters (case-insensitive).
 
-  
-
-- `void limpar()`
-  * Remove todos os produtos do carrinho
-
-  
-- `void removerPorNome(String nome)`
-  * Remove um produto de dentro do carrinho a partir do nome
-  * Deve ignorar letras maiúsculas e minúsculas (Case Insensitive)
-
-
-- `Produto getPorNome(String nome)`
-  * **Retorna** o produto do carrinho a partir do nome
-  * Caso o produto não seja encontrado retorne null
-  * Deve ignorar letras maiúsculas e minúsculas (Case Insensitive)
-
-
-- `Double getValorTotal()`
-  * **Retorna** a soma dos preços de todos os produtos
+- GetTotalValue():
+  * **Returns** the sum of the prices of all products (`double`).

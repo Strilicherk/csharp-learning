@@ -1,137 +1,122 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/VZorXCni)
-# Lista 5 - Introdução a POO 📎
+# List 5 - Introduction to OOP 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar atributos e métodos.
-2. **Respeite** os nomes de atributos e métodos definidos no exercício.
-3. Tome **cuidado** com os **argumentos** especificados no exercício. 
-**Não** adicione argumentos não solicitados e mantenha a ordem definida no enunciado.
-4. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
+## General Guidelines: 🚨
+1. **Respect** the attribute and method names defined in the exercise.
+2. Be **careful** with the **arguments** specified in the exercise. 
+**Do not** add unsolicited arguments and keep the order defined in the prompt.
+3. Verify that there are **no compilation errors** in the project before submitting.
 
-## Dicas: 💡
-* Tome cuidado ao dividir valores no Java. Dividir valores inteiros sempre resulta em uma divisão inteira.
-  ```java
-  // Divisão inteira de dois inteiros
-  Double valor = salario * 10 / 100;
-  // > Resultado: 10 / 100 = 0
+## Tips: 💡
+* Be careful when dividing values in C#. Dividing integer values always results in an integer division.
+  ```csharp
+  // Integer division of two integers
+  double value = salary * 10 / 100;
+  // > Result: 10 / 100 = 0
   
-  // Divisão de um inteiro e um double
-  Double valor2 = salario * 10 / 100.0;
-  // > Resultado: 10 / 100.0 = 0.1
-  ```
+  // Division of an integer and a double
+  double value2 = salary * 10 / 100.0;
+  // > Result: 10 / 100.0 = 0.1
 
-## Exercício 1 - Confeitaria 🚩
+## Exercise 1 - Bakery 🚩
 
-A confeitaria da Dona Maria, precisa de um sistema para gestão dos bolos vendidos em sua loja, que
-possibilite a geração de um relatório de vendas para cada tipo de bolo, para implementação do sistema em
-Java com OO (orientação a objetos), crie:
+Dona Maria's bakery needs a system to manage the cakes sold in her store, enabling the generation of a sales report for each type of cake. To implement the system in C# with OOP (Object-Oriented Programming), create:
 
-A classe `Bolo` precisa conter os seguintes atributos e métodos:
+The `Cake` class must contain the following attributes and methods:
 
-**Atributos:**
-* sabor (Texto) (ex: chocolate, morango ou abacaxi)
-* valor (Número real) (ex: 30.00 e 50.00)
-* quantidadeVendida (Número inteiro) (ex: 10)
-* quantidadeEmEstoque (Número inteiro) (ex: 100)
+**Attributes:**
+* flavor (`string`) (e.g., chocolate, strawberry, or pineapple)
+* price (`double`) (e.g., 30.00 and 50.00)
+* quantitySold (`int`) (e.g., 10)
+* quantityInStock (`int`) (e.g., 100)
 
-**Métodos:**
-* venderBolo: 
-  * **recebe** um número inteiro que é a quantidade desejada do bolo.
-  * **atualiza** o atributo quantidadeVendida com a nova quantidade.
-  * **atualiza** o atributo quantidadeEmEstoque com a nova quantidade após a venda do bolo.
-  * caso a quantidade solicitada seja um valor negativo **não faça nada**.
-  * caso a quantidade solicitada ultrapasse o limite disponível **não faça nada**.
-  
+**Methods:**
+* SellCake: 
+  * **receives** an integer representing the desired quantity of the cake.
+  * **updates** the `quantitySold` attribute with the new quantity.
+  * **updates** the `quantityInStock` attribute with the new quantity after the cake sale.
+  * if the requested quantity is a negative value, **do nothing**.
+  * if the requested quantity exceeds the available limit, **do nothing**.
 
-* aumentarEstoque:
-  * **recebe** um número inteiro que é a quantidade a ser adicionada ao estoque.
-  * **atualiza** o atributo quantidadeEmEstoque com a nova quantidade.
-  * caso a quantidade informada seja um valor negativo **não faça nada**.
+* IncreaseStock:
+  * **receives** an integer representing the quantity to be added to the stock.
+  * **updates** the `quantityInStock` attribute with the new quantity.
+  * if the provided quantity is a negative value, **do nothing**.
 
+* AvailableQuantity:
+  * **returns** how many units of this cake are available for sale (`int`).
 
-* quantidadeDisponivel:
-  * **retorna** quantas unidades desse bolo estão disponíveis para venda.
+* TotalSold:
+  * **returns** the total amount of money from sold cakes (`double`).
 
+Use the `Main` method in a `BakeryTest` class to run the necessary tests.
 
-* totalVendido:
-  * **retorna** a quantidade em dinheiro de bolos vendidos.
+## Exercise 2 - Packages 🚩
 
-Utilize o método `main` na classe `TesteConfeitaria` para realizar os testes necessários.
+Create a program to manage a carrier's packages, generate shipping labels, and calculate shipping costs.
 
-## Exercício 2 - Encomendas 🚩
+The `Package` class must contain the following attributes and methods:
 
-Crie um programa para gerenciar as encomendas de uma transportadora, que gere etiquetas para
-envio, e calcule o frete.
+**Attributes:**
+* size (`string`) (e.g., S, M, L)
+* senderAddress (`string`) (e.g., 18 Gloria Saints Street)
+* recipientAddress (`string`) (e.g., 255 Dr. Pedro Ave)
+* distance (`double`) (e.g., 42.2)
+* productValue (`double`) (e.g., 87.50)
 
-A classe `Encomenda` precisa conter os seguintes atributos e métodos:
+**Methods:**
 
-**Atributos:**
-* tamanho (Texto) (ex: P, M, G)
-* enderecoRemetente (Texto) (Ex: Rua Santos da Glória, 18)
-* enderecoDestinatario (Texto) (Ex: Av Dr. Pedro, 255)
-* distancia (Número real) (ex: 42.2)
-* valorProduto (Número real) (ex: 87.50)
+* CalculateShipping:
+  * **returns** the shipping cost of the product (`double`), taking into account the defined **size** and **distance**.
+  * use the following tables for the calculation:
 
-**Métodos:**
-
-* calcularFrete:
-  * **retorna** o valor do frete do produto levando em conta o **tamanho** e **distância** definida.
-  * use a seguinte tabela para o calculo:
-
-    | Tamanho | Valor adicionado 💸                |
+    | Size | Added Value 💸 |
     |---------|------------------------------------|
-    | **P**   | 1% do valor da encomenda           |
-    | **M**   | 3% do valor da encomenda           |
-    | **G**   | 5% do valor da encomenda           |
+    | **S** | 1% of the package value |
+    | **M** | 3% of the package value |
+    | **L** | 5% of the package value |
 
-    | Distância              | Valor adicionado 💸 |
+    | Distance | Added Value 💸 |
     |------------------------|---------------------|
-    | **Até 50km**           | R$ 3,00             |
-    | **Entre 50km e 200km** | R$ 5,00             |
-    | **Acima de 200km**     | R$ 7,00             |
+    | **Up to 50km** | $ 3.00 |
+    | **Between 50km and 200km** | $ 5.00 |
+    | **Above 200km** | $ 7.00 |
 
+* ApplyDiscountCoupon:
+  * **receives** the discount percentage to be applied to the product value, e.g., 20, 15... 
+  **(`int`)**
+  * **alters** the product value to the new discounted value.
 
+* TotalPackageValue:
+  * **returns** the total value of the package (product value + shipping cost) (`double`).
 
+Use the `Main` method in a `PackageTest` class to run the necessary tests.
 
-* aplicarCupomDeDesconto:
-  * **recebe** o percentual de desconto a ser aplicado no valor do produto ex: 20, 15... 
-  **(número inteiro)**
-  * **altera** o valor do produto para o novo valor com desconto.
+## Exercise 3 - Company 🚩
 
+Create a program to manage a company's employees.
 
-* valorTotalDaEncomenda:
-  * **retorna** o valor total da encomenda (valor do produto + frete)
+The `Employee` class must contain the following attributes and methods:
 
-Utilize o método `main` na classe `TesteEncomendas` para realizar os testes necessários.
+**Attributes:**
+* name (`string`) (e.g., William)
+* role (`string`) (e.g., Systems Analyst)
+* salary (`double`) (e.g., 8000.0)
 
-## Exercício 3 - Empresa 🚩
+**Methods:**
 
-Crie um programa para gerenciar os funcionários de uma empresa.
+* AdjustSalary:
+  * **receives** the percentage value of the adjustment (e.g., 10, 20) (`int`).
+  * **updates** the `salary` attribute with the new adjusted value.
 
-A classe `Funcionario` precisa conter os seguintes atributos e métodos:
+* CalculateHourlyRate:
+  * **returns** the value of the hour worked per month given the `salary` of the `Employee` (`double`).
+  * consider that each employee works 220 hours per month.
 
-**Atributos:**
-* nome (Texto) (ex: William)
-* cargo (Texto) (Ex: Analista Desenvolvedor)
-* salario (Número real) (Ex: 8000.0)
+* CalculateOvertime:
+  * **receives** the amount of hours worked outside the regular working hours (`int`).
+  * **receives** the night shift premium percentage to be received (`int`).
+  * **returns** the amount to be received in overtime given the (**salary**, **overtime hours worked**, and **night shift premium**) (`double`).
 
-**Métodos:**
-
-* reajustarSalario:
-  * **recebe** o valor percentual do reajuste (ex: 10, 20) (número inteiro)
-  * **atualiza** o atributo `salario` com o novo valor reajustado.
-
-
-* calcularValorHora:
-  * **retorna** o valor da hora trabalhada por mês dado o `salario` do `Funcionario`.
-  * considere que cada funcionario trabalha 220 horas por mês.
-
-
-* calcularHoraExtra:
-  * **recebe** a quantidade de horas trabalhadas fora do horário convencional de trabalho (valor inteiro)
-  * **recebe** o percentual de adicional noturno a ser recebido (valor inteiro).
-  * **retorna** o valor a ser recebido em horas extras dado (**salário**, **horas extras trabalhadas** e **adicional noturno**)
-
-Utilize o método `main` na classe `TesteEmpresa` para realizar os testes necessários.
+Use the `Main` method in a `CompanyTest` class to run the necessary tests.
 
 

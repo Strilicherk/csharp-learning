@@ -1,60 +1,61 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/94Tis3bX)
-# Nivelamento - Métodos 📎
+# Leveling - Methods 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar variáveis.
-2. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-3. Respeite os nomes de atributos e métodos definidos no exercício.
-4. Tome cuidado com os argumentos especificados no exercício. Não adicione argumentos não solicitados e mantenha a ordem definida no enunciado.
+## General Guidelines: 🚨
+1. Respect the attribute and method names defined in the exercise.
+2. Pay attention to the arguments specified in the exercise. Do not add unrequested arguments and keep the order defined in the prompt.
 
-### Exercício 1
+---
 
-Dentro da classe ExercicioMetodos escreva os seguintes métodos:
+### Exercise 1
 
-- `Boolean verificarMaioridade(Integer idade)`
-  - Deve retornar `true` se a idade passada como argumento for maior ou igual a 18, e `false` caso contrário.
+Inside the `ExerciseMethods` class, write the following methods:
 
-
-- `Double calcularMedia(Double valor1, Double valor2, Double valor3)`
-  - Deve retornar a média dos valores passados como argumento.
+* `bool VerifyMajority(int age)`
+  * Must return `true` if the age passed as an argument is greater than or equal to 18, and `false` otherwise.
 
 
-- `Integer maiorNumero(Integer valor1, Integer valor2, Integer valor3)`
-  - Deve retornar o maior número entre os valores passados como argumento.
+* `double CalculateAverage(double value1, double value2, double value3)`
+  * Must return the average of the values passed as arguments.
 
 
-- `Integer calcularFatorial(Integer valor)`
-  - Deve retornar o fatorial do valor passado como argumento.
-  - O fatorial de um número é o produto de todos os números inteiros positivos de 1 até o próprio número.
-  - Exemplo: 5! = 5 * 4 * 3 * 2 * 1 = 120
+* `int LargestNumber(int value1, int value2, int value3)`
+  * Must return the largest number among the values passed as arguments.
 
 
-- `Boolean verificarPrimo(Integer valor)`
-  - Deve retornar `true` se o valor passado como argumento for um número primo, e `false` caso contrário.
-  - Um número primo é um número natural maior que 1 que possui apenas dois divisores: 1 e ele mesmo.
+* `int CalculateFactorial(int value)`
+  * Must return the factorial of the value passed as an argument.
+  * The factorial of a number is the product of all positive integers from 1 to the number itself.
+  * Example: 5! = 5 * 4 * 3 * 2 * 1 = 120
 
 
-- `Integer calcularPotencia(Integer base, Integer expoente)`
-  - Deve retornar o resultado da potência do número base elevado ao expoente passado como argumento.
-  - Exemplo: 2^3 = 2 * 2 * 2 = 8
-  - Utilize um laço de repetição para calcular a potência.
+* `bool VerifyPrime(int value)`
+  * Must return `true` if the value passed as an argument is a prime number, and `false` otherwise.
+  * A prime number is a natural number greater than 1 that has only two divisors: 1 and itself.
 
 
-- `Integer calcularTrocoEmBalas(Double valorCompra, Double valorRecebido)`
-  - Deve retornar a quantidade de balas que será possível comprar com o troco da compra.
-  - Considere que cada bala custa R$ 0,25.
-  - Exemplo: Se a compra foi de R\$ 10,00 e o valor recebido foi de R\$ 20,00, o troco será de R\$ 10,00. Com esse troco é possível comprar 40 balas.
-  - Caso o valor recebido seja menor que o valor da compra, retorne 0.
-  - **Dica:** Utilize um laço de repetição
+* `int CalculatePower(int baseValue, int exponent)`
+  * Must return the result of the base number raised to the exponent passed as an argument.
+  * Example: 2^3 = 2 * 2 * 2 = 8
+  * Use a loop to calculate the power.
 
-### Desafio - Verificar Palíndromo
 
-- `Boolean verificarPalindromo(String palavra)`
-  - Deve retornar `true` se a palavra passada como argumento for um palíndromo, e `false` caso contrário.
-  - Um palíndromo é uma palavra, frase ou número que se lê da mesma forma de trás para frente.
-  - Exemplo: "ovo", "arara", "12321", "Ame o poema"
-  - Dica: Métodos úteis da classe String:
-    - `replaceAll` retorna o texto substituindo um caractere de sua escolha por outro.
-    - `toLowerCase` retorna o mesmo texto com letras minúsculas.
-    - `charAt` obtém um caractere do texto.
-    - `length` obtém o tamanho do texto.
+* `int CalculateChangeInCandies(double purchaseValue, double receivedValue)`
+  * Must return the amount of candies that can be bought with the change from the purchase.
+  * Consider that each candy costs $0.25.
+  * Example: If the purchase was $10.00 and the received value was $20.00, the change will be $10.00. With this change, it is possible to buy 40 candies.
+  * If the received value is less than the purchase value, return 0.
+  * **Tip:** Use a loop.
+
+---
+
+### Challenge - Verify Palindrome
+
+* `bool VerifyPalindrome(string word)`
+  * Must return `true` if the word passed as an argument is a palindrome, and `false` otherwise.
+  * A palindrome is a word, phrase, or number that reads the same backward as forward.
+  * Example: "radar", "kayak", "12321", "Race car"
+  * Tip: Useful tools from the `string` class in C#:
+    * `Replace()` returns a new string replacing a character or string of your choice with another.
+    * `ToLower()` returns a copy of the string converted to lowercase.
+    * `[]` (indexer) gets a character from the text at a specific index (e.g., `word[0]`).
+    * `Length` property gets the size of the text.

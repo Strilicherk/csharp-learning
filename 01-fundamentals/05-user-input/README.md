@@ -1,29 +1,23 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/HRpzYTfu)
-# Exercício Scanner 📎
+# Console Input Exercise 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar variáveis.
-2. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
+### Exercise 1
+* Ask the user to enter the student's name.
+* Ask the user to enter the amount of tests they took.
+* Then ask them to enter the grade for each of the tests.
 
-### Exercício 1
-* Peça para o usuário digitar o nome do aluno.
-* Peça para o usuário digitar a quantidade de provas que ele fez.
-* Peça então para ele digitar a nota de cada uma das provas.
-
-Então exiba para ele a média de todas as provas.
+Then display the average of all the tests to the user.
 ```
-Aluno: XXXXXXX
-Média: X,XX
+Student: XXXXXXX
+Average: X.XX
 ```
+### Exercise 2:
 
-### Exercício 2:
+* Ask the user to enter a number between 0 and 100.
+* If they enter a value lower or higher, keep asking until they enter a valid value.
+* Draw 200 numbers (between 0 and 100).
+* Store the position (iteration) of the first time the entered number was drawn.
 
-* Peça para o usuário digitar um número entre 0 e 100.
-* Caso ele digite um valor menor ou maior continue pedindo até que ele digite um valor válido.
-* Sorteie 200 números.
-* Armazene a primeira vez que o número digitado foi sorteado.
-
-Após isso. Exiba uma frase de acordo com a quantidade de sorteios
-  * Se for menor que 10: "Você é MUITO sortudo"
-  * Se for entre 10 e 50: "Você é sortudo"
-  * Se for maior que 50: "Melhor parar de apostar e ir trabalhar!"
+After that, display a phrase according to the amount of draws needed to find the number:
+  * If it is less than 10: "You are VERY lucky"
+  * If it is between 10 and 50: "You are lucky"
+  * If it is greater than 50: "Better stop betting and go to work!"

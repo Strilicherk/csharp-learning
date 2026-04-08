@@ -1,144 +1,138 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/cU-5tHfB)
-# Hora do Café - 001 ☕ - Data e Hora 📅⏰
+# Coffee Time - 001 ☕ - Date and Time 📅⏰
 
-> “Eu desperdicei o tempo, e agora o tempo me desperdiça.”
+> "I wasted time, and now doth time waste me."
 > *William Shakespeare*
 
-## Orientações Gerais: 🚨
+## General Guidelines: 🚨
 
-1. Utilize **apenas** tipos **wrapper** para criar variáveis quando necessário.
-2. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-3. Respeite os nomes de atributos e métodos definidos no exercício.
-4. Tome cuidado com os argumentos especificados no exercício. Não adicione argumentos não
-   solicitados e mantenha a ordem definida no enunciado.
+1. Respect the attribute and method names defined in the exercise.
+2. Pay attention to the arguments specified in the exercise. Do not add unrequested arguments and keep the order defined in the prompt.
 
 ---
 
-### 🕰️ Exercício 1 - Verificar se uma data já passou
+### 🕰️ Exercise 1 - Verify if a date has passed
 
-`Boolean isPassado(LocalDateTime dataHoraInicio, LocalDateTime dataHoraFim)`
+`bool IsPast(DateTime startDateTime, DateTime endDateTime)`
 
-- Deve retornar `true` se `dataHoraInicio` for anterior a `dataHoraFim`, caso contrário `false`.
+- Must return `true` if `startDateTime` is before `endDateTime`, otherwise `false`.
 
 ---
 
-### 🎂 Exercício 2 - Calcular idade
+### 🎂 Exercise 2 - Calculate age
 
-`Integer calcularIdade(LocalDate dataNascimento, LocalDate dataAtual)`
+`int CalculateAge(DateTime birthDate, DateTime currentDate)`
 
-- Deve retornar a idade em anos completos considerando a data de nascimento e a data atual.
+- Must return the age in full years considering the birth date and the current date.
 
-**Exemplo:**
+**Example:**
 
-- Input: `dataAniversario = 2000-09-01`, `dataAtual = 2025-09-01`
+- Input: `birthDate = 2000-09-01`, `currentDate = 2025-09-01`
 - Output: `25`
 
-> **💡 Dica**
-> - Você pode usar o método `until`, que calcula a diferença entre duas datas.
-> - Ele irá retornar um objeto Period.
-> - Saiba mais em: 
->   - https://docs.oracle.com/javase/8/docs/api/java/time/Period.html
->   - https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html#until-java.time.chrono.ChronoLocalDate-
+> **💡 Tip**
+> - In C#, subtracting two `DateTime` objects returns a `TimeSpan`, which counts days, not years. 
+> - A common way to calculate age in C# is by subtracting the `.Year` property of both dates, and then adjusting the result down by 1 if the birthday hasn't occurred yet in the current year.
+> - Official Documentation for `DateTime`: https://learn.microsoft.com/en-us/dotnet/api/system.datetime
 
 ---
 
-### 📆 Exercício 3 - Verificar final de semana
+### 📆 Exercise 3 - Verify weekend
 
-`Boolean isFinalDeSemana(LocalDate data)`
+`bool IsWeekend(DateTime date)`
 
-* Deve retornar `true` se a data informada for um sábado ou domingo, caso contrário `false`.
+* Must return `true` if the informed date is a Saturday or Sunday, otherwise `false`.
 
-**Exemplo:**
+**Example:**
 
-- Input: `data = 2025-09-06` (sábado)
+- Input: `date = 2025-09-06` (Saturday)
 - Output: `true`
 
-> **💡 Dica**
-> - Você pode usar o método `getDayOfWeek()`, que irá retornar uma classe que representa o Dia da
-    Semana, e em seguida, o método `getValue()`, que irá retornar o dia da semana representado
-    numericamente.
-> - Os dias da semana seguem o padrão: **1 = Segunda-feira ... 7 = Domingo**.
+> **💡 Tip**
+> - You can use the `DayOfWeek` property from your `DateTime` object. It returns an enumeration representing the day.
+> - Be careful: The `DayOfWeek` enum in C# uses a different numeric sequence than the one requested in Exercise 6. In C#, it follows: **0 = Sunday, 1 = Monday ... 6 = Saturday**.
 
 ---
 
-### 📅 Exercício 4 - Próximo dia útil
+### 📅 Exercise 4 - Next business day
 
-`LocalDate proximoDiaUtil(LocalDate data)`
+`DateTime NextBusinessDay(DateTime date)`
 
-* Deve retornar a próxima data que não seja sábado nem domingo.
+* Must return the next date that is neither Saturday nor Sunday.
 
-**Exemplo:**
+**Example:**
 
-- Input: `data = 2025-09-06` (sábado)
-- Output: `2025-09-08` (segunda-feira)
+- Input: `date = 2025-09-06` (Saturday)
+- Output: `2025-09-08` (Monday)
 
 ---
 
-### ✍️ Exercício 5 - Formatar data e hora
+### ✍️ Exercise 5 - Format date and time
 
-`String formatarDataHora(LocalDateTime dataHora)`
+`string FormatDateTime(DateTime dateTime)`
 
-- Deve formatar a data e hora com os seguintes campos:
+- Must format the date and time with the following fields:
 
-    - Mês e ano
-    - Hora 12h com minutos e segundos
+    - Month and year
+    - 12-hour time with minutes and seconds
     - AM/PM
-    - Nanosegundos
+    - Fractions of a second (C# calculates "ticks" which can represent down to 100-nanosecond intervals. You can extract up to 7 decimal places).
 
-**Exemplo:**
+**Example:**
 
-- Input: `dataHora = 2025-09-25T15:30:45.123`
-- Output: `09/25/2025 03:30:45 PM (nanosegundos: 123)`
+- Input: `dateTime = 2025-09-25T15:30:45.123`
+- Output: `09/25/2025 03:30:45 PM (nanoseconds: 123)`
+
+> **💡 Tip**
+> - You can use the `ToString("format")` method.
+> - You will need custom format specifiers like `MM`, `yyyy`, `hh`, `tt`, and `f` or `F`.
+> - Official Documentation for Custom Date and Time Format Strings: https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings
 
 ---
 
-### 🗓️ Exercício 6 - Gerar reuniões Semanais
+### 🗓️ Exercise 6 - Generate Weekly Meetings
 
-`List<LocalDate> gerarReunioesSemanais(LocalDate dataComeco, LocalDate dataFim, List<Integer> diasDaSemana)`
+`List<DateTime> GenerateWeeklyMeetings(DateTime startDate, DateTime endDate, List<int> daysOfWeek)`
 
-* Gera uma lista com **todas as datas de reuniões** que ocorram entre `dataComeco` e `dataFim`.
-* Cada reunião acontece nos **dias da semana especificados** em `diasDaSemana`.
-* Os dias da semana seguem o padrão: **1 = Segunda-feira ... 7 = Domingo**.
+* Generates a list with **all meeting dates** that occur between `startDate` and `endDate`.
+* Each meeting happens on the **days of the week specified** in `daysOfWeek`.
+* The `daysOfWeek` input list follows the pattern: **1 = Monday ... 7 = Sunday**.
 
-**Exemplo 1:**
+**Example 1:**
 
 * **Input:**
-  `dataComeco = 2025-09-01`
-  `dataFim = 2025-09-15`
-  `diasDaSemana = [2, 4]` *(Terças e Quintas)*
+  `startDate = 2025-09-01`
+  `endDate = 2025-09-15`
+  `daysOfWeek = [2, 4]` *(Tuesdays and Thursdays)*
 
 * **Output:**
   `[2025-09-02, 2025-09-04, 2025-09-09, 2025-09-11]`
 
-**Exemplo 2:**
+**Example 2:**
 
 * **Input:**
-  `dataComeco = 2025-09-01`
-  `dataFim = 2025-09-10`
-  `diasDaSemana = [1, 7]` *(Segundas e Domingos)*
+  `startDate = 2025-09-01`
+  `endDate = 2025-09-10`
+  `daysOfWeek = [1, 7]` *(Mondays and Sundays)*
 
 * **Output:**
   `[2025-09-01, 2025-09-07, 2025-09-08]`
 
-> **💡 Dica**
-> - Você pode usar o método `getDayOfWeek()`, que irá retornar uma classe que representa o Dia da
-    Semana, e em seguida, o método `getValue()`, que irá retornar o dia da semana representado
-    numericamente.
-> - Os dias da semana seguem o padrão: **1 = Segunda-feira ... 7 = Domingo**.
+> **💡 Tip**
+> - Because the C# `DayOfWeek` enum defaults to `0 = Sunday`, you will need to write a small logic or mapping to align the user's `1-7` input with the internal C# representation. 
 
 ---
 
-### 🔥 Desafio - Dia dos Pais
+### 🔥 Challenge - Father's Day
 
-`LocalDate calcularDiaDosPais(Integer ano)`
+`DateTime CalculateFathersDay(int year)`
 
-* Retorna a data do **Dia dos Pais no Brasil** para o ano informado.
-* O Dia dos Pais **sempre cai no segundo domingo de agosto**.
+* Returns the date of **Father's Day in Brazil** for the given year.
+* Father's Day **always falls on the second Sunday of August**.
 
-**Exemplo:**
+**Example:**
 
 * **Input:**
-  `ano = 2023`
+  `year = 2023`
 
 * **Output:**
   `2023-08-13`

@@ -1,71 +1,71 @@
-# Nivelamento - Variáveis e Estruturas Condicionais 📎
+# Leveling - Variables and Conditional Structures 📎
 
 ---
 
-### 1) Cálculo de Renda
-No país “Quisito” existe um benefício social chamado "Bolsa Filhos".
+### 1) Income Calculation
+In the country of "Quisito", there is a social benefit called "Children Allowance".
 
-Crie um projeto C# (Console Application) que:
+Create a C# project (Console Application) that:
 
-* Possua o método de entrada principal (`Main`) para ser executável.
-* Crie uma variável que armazene quantos filhos de 0 a 3 anos possui.
-* Crie uma variável que armazene quantos filhos de 4 a 16 anos possui.
-* Crie uma variável que armazene quantos filhos de 17 a 18 anos possui.
-* Calcule o valor da Bolsa, sendo que o governo paga:
-  * R$ 25,12 por filhos com menos de 4 anos.
-  * R$ 15,88 por filhos entre 4 e 16 anos.
-  * R$ 12,44 por filhos entre 17 e 18 anos.
+* Has the main entry point method (`Main`) to be executable.
+* Creates a variable that stores how many children from 0 to 3 years old you have.
+* Creates a variable that stores how many children from 4 to 16 years old you have.
+* Creates a variable that stores how many children from 17 to 18 years old you have.
+* Calculates the Allowance value, given that the government pays:
+  * $25.12 for children under 4 years old.
+  * $15.88 for children between 4 and 16 years old.
+  * $12.44 for children between 17 and 18 years old.
   
-Exiba uma frase como esta no console:
+Display a phrase like this in the console:
 
-> "Você tem um total de T filhos e vai receber R$ B de bolsa"
-
----
-
-### 2) Calorias
-Jorge começou a se exercitar e deseja saber quantas calorias vai perder nos exercícios.
-
-Crie um projeto C# (Console Application) que:
-
-* Possua o método de entrada principal (`Main`) para ser executável.
-* Crie uma variável que armazene o tempo, em minutos (valor inteiro), que ele passou se aquecendo.
-* Crie uma variável que armazene o tempo em minutos (valor inteiro) que ele fez exercícios aeróbicos (correr, andar, pedalar, etc.).
-* Crie uma variável que armazene o tempo em minutos (valor inteiro) que ele fez exercícios de musculação.
-* Calcule quantas calorias o Jorge perdeu, sendo que:
-  * Cada minuto de aquecimento faz perder 12 calorias.
-  * Cada minuto de exercício aeróbico faz perder 20 calorias.
-  * Cada minuto de musculação faz perder 25 calorias.
-
-Exiba, usando interpolação de strings (`$""`) e apenas valores numéricos inteiros, uma frase como esta:
-
-> "Olá, Jorge. Você fez um total de X minutos de exercícios e perdeu cerca de Y calorias."
+> "You have a total of T children and will receive $B of allowance"
 
 ---
 
-### 3) Cálculo de Troco
+### 2) Calories
+Jorge started exercising and wants to know how many calories he will burn during his workouts.
 
-Crie um projeto C# (Console Application) que:
+Create a C# project (Console Application) that:
 
-* Possua o método de entrada principal (`Main`) para ser executável.
-* Crie uma variável que armazene o valor unitário de um produto.
-* Crie uma variável que armazene a quantidade vendida.
-* Crie uma variável que armazene o valor pago pelo cliente.
+* Has the main entry point method (`Main`) to be executable.
+* Creates a variable that stores the time, in minutes (integer value), that he spent warming up.
+* Creates a variable that stores the time in minutes (integer value) that he did aerobic exercises (running, walking, cycling, etc.).
+* Creates a variable that stores the time in minutes (integer value) that he did weight training.
+* Calculates how many calories Jorge burned, given that:
+  * Each minute of warm-up burns 12 calories.
+  * Each minute of aerobic exercise burns 20 calories.
+  * Each minute of weight training burns 25 calories.
 
-Calcule e exiba o troco com a seguinte frase:
+Display, using string interpolation (`$""`) and only integer numeric values, a phrase like this:
 
-> "Seu troco será de R$ X", onde "X" é o valor a ser devolvido ao cliente.
+> "Hello, Jorge. You did a total of X minutes of exercise and burned about Y calories."
 
 ---
 
-### 4) Cálculo de Média
+### 3) Change Calculation
 
-Crie um projeto C# (Console Application) que:
+Create a C# project (Console Application) that:
 
-* Possua o método de entrada principal (`Main`) para ser executável.
-* Crie variáveis para armazenar o nome e duas notas do usuário.
-* As notas devem ser tratadas como números reais.
-* Calcule a média entre as notas (Dica: a lógica matemática é a mesma utilizada em linguagens como JavaScript ou Java).
+* Has the main entry point method (`Main`) to be executable.
+* Creates a variable that stores the unit price of a product.
+* Creates a variable that stores the quantity sold.
+* Creates a variable that stores the amount paid by the customer.
 
-Exiba uma frase como esta:
+Calculate and display the change with the following phrase:
 
-> "Olá, NOME. Sua média foi de MEDIA"
+> "Your change will be $X", where "X" is the amount to be returned to the customer.
+
+---
+
+### 4) Average Calculation
+
+Create a C# project (Console Application) that:
+
+* Has the main entry point method (`Main`) to be executable.
+* Creates variables to store the user's name and two grades.
+* The grades must be treated as real numbers.
+* Calculates the average between the grades (Tip: the mathematical logic is the same used in languages like JavaScript or Java).
+
+Display a phrase like this:
+
+> "Hello, NAME. Your average was AVERAGE"

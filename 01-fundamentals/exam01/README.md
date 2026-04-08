@@ -1,146 +1,129 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ebrxTKAc)
-# Avaliação Continuada 01 - Prática 📎
+# Continuous Assessment 01 - Practice 📎
 
-## 📌 Orientações Gerais:
-1. Utilize **apenas** tipos **wrapper** para criar variáveis.
-2. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-3. Respeite os nomes de atributos e métodos definidos no exercício.
-4. Tome cuidado com os argumentos especificados no exercício. Não adicione argumentos não solicitados e mantenha a ordem definida no enunciado.
+## 📌 General Guidelines:
+1. Verify that there are **no compilation errors** in the project before submitting.
+2. Respect the attribute and method names defined in the exercise.
+3. Pay attention to the arguments specified in the exercise. Do not add unrequested arguments and keep the order defined in the prompt.
 
-> Dica: copie e cole os nomes do enunciado para evitar erros de digitação
-
-## 🚨 Orientações para a avaliação
-
-1. **Não é permitido** utilizar o material de aula para consulta.
-2. **Não é permitido** consultar a internet.
-3. **Não é permitido** utilizar qualquer tipo de inteligência artificial.
-4. **Não é permitido** o uso de celular.
-5. **Não é permitido** a comunicação com colegas.
-6. **Não é permitido** pedir ajuda ao professor.
+> Tip: copy and paste the names from the instructions to avoid typos.
 
 ## 🎬 Cinema
 
-Você é o desenvolvedor de um sistema feito em Java da rede de cinemas CineTech e foi solicitado a você a 
-implementação de alguns métodos para ajudar na operação do cinema.
+You are the developer of a system created in C# for the CineTech cinema chain, and you have been asked to implement some methods to help with the cinema's operations.
 
-Para isso foi entregue uma documentação detalhada a respeito do funcionamento dessa rede de cinemas:
+For this, you were given detailed documentation regarding how this cinema chain works:
 
-### 💺 Sala
+### 💺 Room
 
-O preço das salas são calculados da seguinte forma:
+The prices of the rooms are calculated as follows:
 
-O preço base da sala é de R\$ 30,00.\
-A sala 3D adiciona R\$ 5,00 a mais ao preço do ingresso.\
-A sala IMAX adiciona R\$ 10,00 a mais ao preço do ingresso.
+The base price of the room is $30.00.
+The 3D room adds $5.00 to the ticket price.
+The IMAX room adds $10.00 to the ticket price.
 
-O cinema CineTech possui 4 salas:
+The CineTech cinema has 4 rooms:
 
-* **Sala 1:** 
-  * Sala comum
-  * Capacidade: 50 lugares
-  * Preço: R\$ 30,00
+* **Room 1:** * Standard room
+  * Capacity: 50 seats
+  * Price: $30.00
 
 
-* **Sala 2:**
-  * Sala 3D
-  * Capacidade: 37 lugares
-  * Preço: R\$ 35,00
+* **Room 2:**
+  * 3D room
+  * Capacity: 37 seats
+  * Price: $35.00
 
 
-* **Sala 3:** 
-  * Sala IMAX
-  * Capacidade: 90 lugares
-  * Preço: R\$ 40,00
+* **Room 3:** * IMAX room
+  * Capacity: 90 seats
+  * Price: $40.00
 
 
-* **Sala 4:** 
-  * Sala 3D e IMAX
-  * Capacidade: 80 lugares
-  * Preço: R\$ 45,00
+* **Room 4:** * 3D and IMAX room
+  * Capacity: 80 seats
+  * Price: $45.00
 
-### Observações:
-* Na compra do ingresso, estudantes podem solicitar meia entrada e pagar metade do
-valor do ingresso.
-* O cinema **sempre lucra 10%** do valor de cada ingresso vendido.
+### Observations:
+* When buying a ticket, students can request a half-entry and pay half the ticket price.
+* The cinema **always profits 10%** of the value of each ticket sold.
 
-### 🛠️ Implementação
+### 🛠️ Implementation
 
-Com a documentação em mãos, você deve criar dentro da classe `Cinema` os seguintes métodos:
+With the documentation in hand, you must create the following methods inside the `Cinema` class:
 
-* `Boolean validarSala(Integer sala)`
-  * Verifica se o número da sala é válido.
-  * Retorna `true` se o número da sala for válido e `false` caso contrário.
-  * Exemplo: se o número da sala for 3, o retorno é `true`.
-  * Exemplo: se o número da sala for 5, o retorno é `false`.
+* `bool ValidateRoom(int room)`
+  * Verifies if the room number is valid.
+  * Returns `true` if the room number is valid, and `false` otherwise.
+  * Example: if the room number is 3, the return is `true`.
+  * Example: if the room number is 5, the return is `false`.
 
 
-* `Double calcularValorIngresso(Integer sala, Boolean meiaEntrada)`
-  * Calcula o valor do ingresso conforme a sala e se é meia entrada ou não.
-  * Exemplo: se a sala for 3D e o ingresso for meia entrada, o valor do ingresso é R$ 17,50.
-  * Exemplo: se a sala for IMAX e o ingresso for inteira, o valor do ingresso é R$ 40,00.
-  * Caso a sala seja inválida retorne 0,0.
+* `double CalculateTicketValue(int room, bool halfEntry)`
+  * Calculates the ticket value according to the room and whether it is a half-entry or not.
+  * Example: if the room is 3D and the ticket is a half-entry, the ticket value is $17.50.
+  * Example: if the room is IMAX and the ticket is full price, the ticket value is $40.00.
+  * If the room is invalid, return 0.0.
 
 
-* `Double calcularLucroTotal(Integer[] salas, Boolean[] estudantes)`
-  * Calcula o lucro total do cinema conforme o vetor de salas e estudantes.
-  * Cada posição do vetor representa um ingresso e o programa deve juntar as informações de ambos os vetores para obter a informação completa do ingresso.
-  * Exemplo: 
-    * salas[0] = 2
-    * estudantes[0] = false 
-    * **Resultado:** Ingresso comum na sala 2
-  * Exemplo:
-    * salas[1] = 4
-    * estudantes[1] = true
-    * **Resultado:** Ingresso de estudante na sala 4
-  * Calcule o lucro conforme a documentação fornecida.
+* `double CalculateTotalProfit(int[] rooms, bool[] students)`
+  * Calculates the total profit of the cinema according to the array of rooms and students.
+  * Each position in the array represents a ticket, and the program must combine the information from both arrays to get the complete ticket information.
+  * Example: 
+    * rooms[0] = 2
+    * students[0] = false 
+    * **Result:** Standard ticket in room 2
+  * Example:
+    * rooms[1] = 4
+    * students[1] = true
+    * **Result:** Student ticket in room 4
+  * Calculate the profit according to the provided documentation.
 
 
-### 🍅 Tomatômetro:
-O Rotten Tomatoes coleta críticas de críticos profissionais (geralmente de publicações respeitadas).
-Cada crítica é classificada como "Fresh" (positiva) ou "Rotten" (negativa).
-O score do Tomatômetro é a porcentagem de críticas que são Fresh.
+### 🍅 Tomatometer:
+Rotten Tomatoes collects reviews from professional critics (usually from respected publications).
+Each review is classified as "Fresh" (positive) or "Rotten" (negative).
+The Tomatometer score is the percentage of reviews that are Fresh.
 
-Fórmula:
+Formula:
 
 $$
-\text{Tomatômetro} = \left( \frac{\text{número de críticas Fresh}}{\text{total de críticas}} \right) \times 100
+\text{Tomatometer} = \left( \frac{\text{number of Fresh reviews}}{\text{total reviews}} \right) \times 100
 $$
 
-#### O que significam os selos?
+#### What do the badges mean?
 
-| Selo                       | Condição                                           |
+| Badge                      | Condition                                          |
 |----------------------------|----------------------------------------------------|
-| Fresh 🍅   | Se o filme tem 60% ou mais de críticas positivas.  |
-| Rotten 🤢 | Se o filme tem menos de 60% de críticas positivas. |
+| Fresh 🍅                   | If the movie has 60% or more positive reviews.     |
+| Rotten 🤢                  | If the movie has less than 60% positive reviews.   |
 
-Para melhorar a qualidade dos filmes exibidos no CineTech foi solicitado a implementação de um sistema que calcula 
-o selo tomatômetro dos filmes que entrarão em cartaz.
+To improve the quality of the movies shown at CineTech, you were asked to implement a system that calculates the Tomatometer badge for the movies that will be playing.
 
-### 🛠️ Implementação
+### 🛠️ Implementation
 
-* `String calcularSeloTomatometro(Boolean[] reviews)`
-  * Calcula o selo do Rotten Tomatoes de acordo com as reviews do filme
-  * O vetor reviews armazena cada review como valor boolean
-    * true: review positiva
-    * false: review negativa
-  * O método **deve retornar** apenas **"fresh"** ou **"rotten"** (em caixa baixa)
-  * **Cuidado:** converta os valores para double, caso contrário o Java fará a divisão inteira.
-  * Exemplo:
+* `string CalculateTomatometerBadge(bool[] reviews)`
+  * Calculates the Rotten Tomatoes badge according to the movie's reviews.
+  * The reviews array stores each review as a boolean value:
+    * true: positive review
+    * false: negative review
+  * The method **must return** only **"fresh"** or **"rotten"** (in lowercase).
+  * **Careful:** convert the values to `double`, otherwise C# will perform integer division.
+  * Example:
     * reviews = [true, true, false, true]
     * score = 3 / 4 * 100 = 75%
-    * selo = fresh
+    * badge = fresh
 
-## 📓 Orientações Finais:
+## 📓 Final Guidelines:
 
-### 🎯 Observações:
+### 🎯 Observations:
 
-1. O projeto contém testes automatizados para verificar a implementação dos métodos.
-2. A classe `Cinema` já está criada e os métodos devem ser implementados dentro dela.
-3. O projeto possui uma classe `Main` caso queira testar manualmente o funcionamento dos métodos.
+1. The project contains automated tests to verify the implementation of the methods.
+2. The `Cinema` class is already created, and the methods must be implemented inside it.
+3. The project has a `Main` class in case you want to manually test how the methods work.
 
-### 📦 Entrega:
+### 📦 Submission:
 
-1. Faça o `commit` do código e após isso o `push` para o repositório do GitHub.
-2. Abra o **GitHub** e **verifique** se o último `push` foi realizado com sucesso.
+1. `commit` the code and then `push` it to the GitHub repository.
+2. Open **GitHub** and **verify** if the last `push` was successful.
 
-### Boa sorte! 🍀
+### Good luck! 🍀

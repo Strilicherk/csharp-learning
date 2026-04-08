@@ -1,60 +1,58 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7WilJBfh)
-# Exercício - Vetores 📎
+# Exercise - Arrays 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar variáveis.
-2. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-3. Respeite os nomes de atributos e métodos definidos no exercício.
-4. Tome cuidado com os argumentos especificados no exercício. Não adicione argumentos não
-   solicitados e mantenha a ordem definida no enunciado.
+## General Guidelines: 🚨
+1. Respect the attribute and method names defined in the exercise.
+2. Pay attention to the arguments specified in the exercise. Do not add unrequested arguments and keep the order defined in the prompt.
 
-### Exercício 1 - Vetores
+---
 
-Dentro da classe ExercicioVetores crie os seguintes métodos:
+### Exercise 1 - Arrays
 
-* `Integer somar(Integer[] vetor)`
-  * Deve retornar o resultado da soma de todos os elementos do vetor.
+Inside the `ExerciseArrays` class, create the following methods:
+
+* `int Sum(int[] array)`
+  * Must return the sum of all elements in the array.
 
 
-* `Double calcularMedia(Double[] notas)`
-  * Deve retornar a média aritmética de todas as notas contidas no vetor `notas`.
+* `double CalculateAverage(double[] grades)`
+  * Must return the arithmetic average of all grades contained in the `grades` array.
 
 
-* `Integer buscarMaiorNumero(Integer[] vetor)`
-  * Deve retornar o maior valor dentro do vetor de números.
+* `int FindLargestNumber(int[] array)`
+  * Must return the largest value within the number array.
 
 
-* `Integer calcularDecimal(Integer[] binario)`
-  * Recebe um vetor contendo um valor binário e calcula o valor decimal correspondente.
-  * Exemplo:
-    * **Input:** binario = [1, 0, 1, 0]
+* `int CalculateDecimal(int[] binary)`
+  * Receives an array containing a binary value and calculates the corresponding decimal value.
+  * Example:
+    * **Input:** binary = [1, 0, 1, 0]
     * **Output:** 10
-  * Dica:
-    * Para converter o Math.pow para o tipo Integer utilize "((int) Math.pow(2.0, 2.0))"
+  * Tip:
+    * To convert `Math.Pow` to the `int` type in C#, use explicit casting like this: `(int)Math.Pow(2.0, 2.0)`
 
 
-* `Character[] inverter(Character[] vetor)`
-  * Deve inverter o vetor recebido como argumento e retornar.
-  * Exemplo: `['j', 'a', 'v', 'a'] => ['a', 'v', 'a', 'j']`
+* `char[] Reverse(char[] array)`
+  * Must reverse the array received as an argument and return it.
+  * Example: `['j', 'a', 'v', 'a'] => ['a', 'v', 'a', 'j']`
 
 
-
-* `Integer[] mesclar(Integer[] vetor1, Integer[] vetor2)`
-  * Leia dois vetores de tamanhos diferentes (ordenados) e crie um terceiro vetor intercalando seus elementos.
-  * Exemplo: \
+* `int[] Merge(int[] array1, int[] array2)`
+  * Read two arrays of different sizes (sorted) and create a third array interleaving their elements.
+  * Example: \
     A = [1, 2, 5, 8] \
     B = [3, 4, 6] \
-    Resultado = [1, 2, 3, 4, 5, 6, 8]
+    Result = [1, 2, 3, 4, 5, 6, 8]
 
+---
 
-### Desafio - Two Sum
+### Challenge - Two Sum
 
-* `Integer[] somarDois(Integer[] vetor, Integer alvo)`
-  * Dado um vetor de números inteiros e um inteiro alvo, retorne os índices dos dois números de forma que eles somem o número alvo.
-  * Você pode assumir que cada entrada tem exatamente uma solução.
-  * Exemplo 1:
-    * **Input:** vetor = [2,7,11,15], alvo = 9 \
+* `int[] TwoSum(int[] array, int target)`
+  * Given an array of integers and a target integer, return the indices of the two numbers so that they add up to the target number.
+  * You can assume that each input has exactly one solution.
+  * Example 1:
+    * **Input:** array = [2,7,11,15], target = 9 \
       **Output:** [0, 1]
-  * Exemplo 2:
-    * **Input:** vetor = [2,3,4], alvo = 6 \
+  * Example 2:
+    * **Input:** array = [2,3,4], target = 6 \
       **Output:** [0, 2]

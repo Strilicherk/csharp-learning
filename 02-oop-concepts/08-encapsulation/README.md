@@ -1,68 +1,52 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/wai1tYbo)
-# Exercício - Encapsulamento e UML 📎
+# Exercise - Encapsulation and UML 📎
 
-## Orientações Gerais: 🚨
-1. Utilize **apenas** tipos **wrapper** para criar atributos e métodos.
-2. **Respeite** os nomes de atributos e métodos definidos no exercício.
-3. Tome **cuidado** com os **argumentos** especificados no exercício.
-   **Não** adicione argumentos não solicitados e mantenha a ordem definida no enunciado.
-4. Verifique se **não** há **erros de compilação** no projeto antes de enviar.
-5. As classes devem seguir as regras de encapsulamento.
-6. Deixe um **construtor vazio** para utilização nos testes unitários.
+## General Guidelines: 🚨
+1. **Respect** the attribute and method names defined in the exercise.
+2. Be **careful** with the **arguments** specified in the exercise.
+   **Do not** add unsolicited arguments and keep the order defined in the prompt.
+3. Verify that there are **no compilation errors** in the project before submitting.
+4. The classes must follow encapsulation rules.
+5. Leave an **empty constructor** for use in unit tests.
 
-## Exercício - Bilhete Único 🚩
+## Exercise - Transit Pass 🚩
 
-Implemente o seguinte diagrama de classes:
+Implement the following class diagram:
 
 ![image](diagrama/bilhete-unico.png)
 
-Métodos da classe `BilheteUnico`:
+Methods of the `TransitPass` class:
 
-* A classe deve conter apenas os métodos getters e setter para acessar e alterar o valor dos atributos.
+* The class should contain only properties (getters and setters) to access and modify the attribute values.
 
-Métodos da classe `Onibus`:
+Methods of the `Bus` class:
 
-* A classe deve conter apenas os métodos getters para acessar os atributos.
+* The class should contain only getter properties to access the attributes.
 
+* ChargeFare(transitPass: TransitPass)
+  * checks if the pass is blocked, and if so, displays the message "blocked transit pass".
+  * checks if there is enough balance on the pass, and if not, displays the message "Insufficient balance to perform the operation".
+  * updates the **balance** value of the pass.
+  * students pay half the fare value.
+  * updates the **passengerCount** attribute.
 
-* cobrarPassagem(bilhete: BilheteUnico)
-  * verifica se o bilhete está bloqueado e caso esteja exibe a mensagem
-    "bilhete único bloqueado"
-  * verifica se existe saldo o suficiente no bilhete e caso não exista, 
-  exibe a mensagem "Não há saldo suficiente para realizar a operação"
-  * atualiza o valor do **saldo** do bilhete
-  * estudantes pagam metade do valor da passagem
-  * atualiza o atributo **qtdPassageiros**
+* ChargeFare(money: double)
+  * checks if the provided amount of **money** is sufficient to pay the fare, and if not, displays the message "Insufficient money to perform the operation".
+  * updates the **passengerCount** attribute.
 
+Methods of the `RechargeStation` class:
 
-* cobrarPassagem(dinheiro: Double)
-  * verifica se o valor em **dinheiro** fornecido é suficiente para pagar a passagem e caso 
-  não seja exibe a mensagem "Dinheiro insuficiente para realizar operação"
-  * atualiza o atributo **qtdPassageiros**
+* The class should contain only getter properties to access the attributes.
 
-  
-Métodos da classe `PontoDeRecarga`:
+* CheckBalance(transitPass: TransitPass)
+  * checks if the pass is blocked, and if so, displays the message "blocked transit pass", returns 0, and does not update the **consultationCount** attribute.
+  * updates the **consultationCount** attribute.
+  * **returns** the current balance value of the pass (`double`).
 
-* A classe deve conter apenas os métodos getters para acessar os atributos.
+* Recharge(transitPass: TransitPass, amount: double)
+  * checks if the recharge amount is at least R$ 5.00 (Minimum value), and if not, displays the message "Minimum recharge value not reached".
+  * checks if the pass is blocked, and if so, displays the message "blocked transit pass".
+  * updates the pass's **balance** value by adding the recharge amount.
+  * updates the **rechargeCount** attribute.
 
-
-* consultarSaldo(bilhete: BilheteUnico)
-  * verifica se o bilhete está bloqueado e caso esteja exibe a mensagem
-    "bilhete único bloqueado", retorna 0 e não atualiza o atributo qtdConsultasRealizadas
-  * atualiza o atributo **qtdConsultasRealizadas**
-  * **retorna** o valor atual de saldo do bilhete
-
-
-* recarregar(bilhete: BilheteUnico, valor: Double)
-  * verifica se o valor de recarga é de pelo menos R$ 5,00 (Valor mínimo) e caso não seja
-  exibe a mensagem "Valor mínimo de recarga não atingido"
-  * verifica se o bilhete está bloqueado e caso esteja exibe a mensagem
-  "bilhete único bloqueado"
-  * atualiza o valor do **saldo** do bilhete adicionando o valor da recarga
-  * atualiza o atributo **qtdRecargasRealizadas**
-
-
-* bloquear(bilhete: BilheteUnico)
-  * atualiza o atributo **bloquado** do bilhete único
-
-
+* Block(transitPass: TransitPass)
+  * updates the **isBlocked** attribute of the transit pass to true.

@@ -1,92 +1,89 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/bt5wo5ig)
-# Exercício - Herança com Agregação 📎
+# Exercise - Inheritance with Aggregation 📎
 
-## Orientações Gerais 🚨
-
-1. Utilize **apenas** tipos **wrapper** para criar atributos e métodos.
-2. **Respeite** os nomes de atributos e métodos definidos no exercício.
-3. Tome **cuidado** com os **argumentos** especificados no exercício.
-4. **Não adicione** argumentos não solicitados e mantenha a ordem definida no enunciado.
-4. Verifique se **não há erros de compilação** no projeto antes de enviar.
-5. As classes devem seguir as regras de **encapsulamento**.
+## General Guidelines 🚨
+1. **Respect** the attribute and method names defined in the exercise.
+2. Be **careful** with the **arguments** specified in the exercise.
+3. **Do not add** unsolicited arguments and maintain the order defined in the prompt.
+4. Verify that there are **no compilation errors** in the project before submitting.
+5. Classes must follow **encapsulation** rules (use properties).
 
 ---
 
-## Diagrama de classe
-![diagrama.png](diagrama.png)
+## Class Diagram
+![diagram.png](diagram.png)
 
-## Classe: `Desenvolvedor` 🚩
+## Class: `Developer` 🚩
 
-### Métodos Públicos
+### Public Methods
 
-**Getters e Setters**
-- Deve conter **todos** os métodos getters e setters.
+**Properties (Getters and Setters)**
+- Must contain **all** getter and setter properties.
 
-**`public Double calcularSalario()`**
-- **Descrição**: Calcula o salário do desenvolvedor com base nos atributos `qtdHoras` e `valorHora`.
-
----
-
-## Classe: `DesenvolvedorWeb` 🖥️
-
-### Métodos Públicos
-
-**Getters e Setters**
-- Deve conter **todos** os métodos getters e setters.
-
-**`public Double calcularSalario()`**
-- **Descrição**: Calcula o salário do desenvolvedor com base nos atributos `qtdHoras` e `valorHora`, adicionando as horas de mentoria, que valem **R$ 300,00** por hora.
-
-**`public Boolean isFullstack()`**
-- **Descrição**: Retorna `true` se o desenvolvedor for fullstack, ou seja, se os atributos `backend`, `frontend`, e `sgbd` forem diferentes de `null`.
+**`public double CalculateSalary()`**
+- **Description**: Calculates the developer's salary based on the `hoursWorked` and `hourlyRate` attributes.
 
 ---
 
-## Classe: `DesenvolvedorMobile` 📱
+## Class: `WebDeveloper` 🖥️
 
-### Métodos Públicos
+### Public Methods
 
-**Getters e Setters**
-- Deve conter **todos** os métodos getters e setters.
+**Properties (Getters and Setters)**
+- Must contain **all** getter and setter properties.
 
-**`public Double calcularSalario()`**
-- **Descrição**: Calcula o salário do desenvolvedor com base nos atributos `qtdHoras` e `valorHora`, adicionando as horas de prototipação, que valem **R$ 200,00** por hora.
+**`public double CalculateSalary()`**
+- **Description**: Calculates the developer's salary based on the `hoursWorked` and `hourlyRate` attributes, adding mentoring hours, which are worth **$ 300.00** per hour.
 
----
-
-## Classe: `Consultoria` 🏢
-
-### Métodos Públicos
-
-**Getters e Setters**
--  Deve conter **todos** os métodos getters e setters, **exceto** o da lista de desenvolvedores.
-
-**`public void contratar(Desenvolvedor desenvolvedor)`**
--  **Descrição**: Adiciona o desenvolvedor à consultoria se houver vagas disponíveis.
-- **Importante**: O atributo `vagas` representa um limite máximo (capacidade) de desenvolvedores e não deve ser decrementado ao contratar.
-
-**`public void contratarFullstack(DesenvolvedorWeb desenvolvedor)`**
-- **Descrição**: Adiciona o desenvolvedor fullstack à consultoria, validando se realmente é fullstack de acordo com as regras do método `isFullstack`.
-
-**`public Double getTotalSalarios()`**
-- **Descrição**: Retorna a soma de todos os salários dos desenvolvedores da consultoria.
-
-**`public Integer qtdDesenvolvedoresMobile()`**
-- **Descrição**: Retorna o total de desenvolvedores mobile da consultoria.
-
-**`public List<Desenvolvedor> buscarPorSalarioMaiorIgualQue(Double salario)`**
-- **Descrição**: Retorna todos os desenvolvedores com salário maior ou igual ao valor passado como argumento.
-
-**`public Desenvolvedor buscarMenorSalario()`**
-- **Descrição**: Retorna o desenvolvedor com o menor salário da consultoria.
-- **Nota**: Caso a lista esteja vazia, retorna `null`.
+**`public bool IsFullstack()`**
+- **Description**: Returns `true` if the developer is fullstack, meaning the `backend`, `frontend`, and `database` attributes are not `null`.
 
 ---
 
-### Desafio ⚡
+## Class: `MobileDeveloper` 📱
 
-**`public List<Desenvolvedor> buscarPorTecnologia(String tecnologia)`**
--  **Descrição**: Retorna os desenvolvedores que utilizam a tecnologia passada como argumento (pode ser `frontend`, `backend`, `sgbd`, `plataforma`, ou `linguagem`).
+### Public Methods
 
-**`public Double getTotalSalariosPorTecnologia(String tecnologia)`**
-- **Descrição**: Retorna a soma dos salários dos desenvolvedores que utilizam a tecnologia especificada.
+**Properties (Getters and Setters)**
+- Must contain **all** getter and setter properties.
+
+**`public double CalculateSalary()`**
+- **Description**: Calculates the developer's salary based on the `hoursWorked` and `hourlyRate` attributes, adding prototyping hours, which are worth **$ 200.00** per hour.
+
+---
+
+## Class: `Consultancy` 🏢
+
+### Public Methods
+
+**Properties (Getters and Setters)**
+- Must contain **all** getter and setter properties, **except** for the developer list setter.
+
+**`public void Hire(Developer developer)`**
+- **Description**: Adds the developer to the consultancy if there are vacancies available.
+- **Important**: The `vacancies` attribute represents a maximum limit (capacity) of developers and should not be decremented when hiring.
+
+**`public void HireFullstack(WebDeveloper developer)`**
+- **Description**: Adds the fullstack developer to the consultancy, validating if they are truly fullstack according to the rules of the `IsFullstack` method.
+
+**`public double GetTotalSalaries()`**
+- **Description**: Returns the sum of all salaries of the developers in the consultancy.
+
+**`public int GetMobileDeveloperCount()`**
+- **Description**: Returns the total number of mobile developers in the consultancy.
+
+**`public List<Developer> FindBySalaryGreaterThanOrEqual(double salary)`**
+- **Description**: Returns all developers with a salary greater than or equal to the value passed as an argument.
+
+**`public Developer FindLowestSalary()`**
+- **Description**: Returns the developer with the lowest salary in the consultancy.
+- **Note**: If the list is empty, return `null`.
+
+---
+
+### Challenge ⚡
+
+**`public List<Developer> FindByTechnology(string technology)`**
+- **Description**: Returns the developers who use the technology passed as an argument (could be `frontend`, `backend`, `database`, `platform`, or `language`).
+
+**`public double GetTotalSalariesByTechnology(string technology)`**
+- **Description**: Returns the sum of the salaries of the developers who use the specified technology.
