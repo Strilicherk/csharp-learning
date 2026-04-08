@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("01-variaveis-estruturas-condicionais")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+402d8f35b7f6eaa66cb421dd9bef0fb4b6d8dd9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ffcae5a877fbac53e675e72dfbc783b6f6915c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("01-variaveis-estruturas-condicionais")]
 [assembly: System.Reflection.AssemblyTitleAttribute("01-variaveis-estruturas-condicionais")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Poll")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4ffcae5a877fbac53e675e72dfbc783b6f6915c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Poll")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Poll")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
