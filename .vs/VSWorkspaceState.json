@@ -2,8 +2,11 @@
   "ExpandedNodes": [
     "",
     "\\01-fundamentals",
-    "\\01-fundamentals\\04-array"
+    "\\01-fundamentals\\06-methods\\MethodsExercise",
+    "\\02-oop-concepts",
+    "\\02-oop-concepts\\07-OOP-introduction",
+    "\\02-oop-concepts\\07-OOP-introduction\\Bakery"
   ],
-  "SelectedNode": "\\01-fundamentals\\04-array\\04-array.slnx",
+  "SelectedNode": "\\02-oop-concepts\\07-OOP-introduction\\Bakery\\Cake.cs",
   "PreviewInSolutionExplorer": false
 }

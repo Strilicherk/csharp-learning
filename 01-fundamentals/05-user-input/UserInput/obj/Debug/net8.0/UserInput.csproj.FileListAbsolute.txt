@@ -1,0 +1,15 @@
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\bin\Debug\net8.0\UserInput.exe
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\bin\Debug\net8.0\UserInput.deps.json
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\bin\Debug\net8.0\UserInput.runtimeconfig.json
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\bin\Debug\net8.0\UserInput.dll
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\bin\Debug\net8.0\UserInput.pdb
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.AssemblyInfo.cs
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.sourcelink.json
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.dll
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\refint\UserInput.dll
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.pdb
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\UserInput.genruntimeconfig.cache
+C:\Users\mathe\Desktop\csharp-learning\01-fundamentals\05-user-input\UserInput\obj\Debug\net8.0\ref\UserInput.dll

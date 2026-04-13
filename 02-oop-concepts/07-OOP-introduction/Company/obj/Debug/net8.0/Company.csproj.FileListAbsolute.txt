@@ -1,0 +1,15 @@
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.AssemblyInfo.cs
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.sourcelink.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\bin\Debug\net8.0\Company.exe
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\bin\Debug\net8.0\Company.deps.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\bin\Debug\net8.0\Company.runtimeconfig.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\bin\Debug\net8.0\Company.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\bin\Debug\net8.0\Company.pdb
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\refint\Company.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.pdb
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\Company.genruntimeconfig.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Company\obj\Debug\net8.0\ref\Company.dll

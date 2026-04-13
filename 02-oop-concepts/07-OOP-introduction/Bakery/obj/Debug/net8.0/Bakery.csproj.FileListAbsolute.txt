@@ -1,0 +1,15 @@
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\bin\Debug\net8.0\Bakery.exe
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\bin\Debug\net8.0\Bakery.deps.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\bin\Debug\net8.0\Bakery.runtimeconfig.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\bin\Debug\net8.0\Bakery.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\bin\Debug\net8.0\Bakery.pdb
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.AssemblyInfo.cs
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.sourcelink.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\refint\Bakery.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.pdb
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\Bakery.genruntimeconfig.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\07-OOP-introduction\Bakery\obj\Debug\net8.0\ref\Bakery.dll
