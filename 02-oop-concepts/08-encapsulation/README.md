@@ -12,7 +12,7 @@
 
 Implement the following class diagram:
 
-![image](diagrama/bilhete-unico.png)
+![image](bilhete-unico.png)
 
 Methods of the `TransitPass` class:
 

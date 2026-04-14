@@ -1,0 +1,15 @@
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\bin\Debug\net8.0\TransitPass.exe
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\bin\Debug\net8.0\TransitPass.deps.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\bin\Debug\net8.0\TransitPass.runtimeconfig.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\bin\Debug\net8.0\TransitPass.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\bin\Debug\net8.0\TransitPass.pdb
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.AssemblyInfo.cs
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.sourcelink.json
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\refint\TransitPass.dll
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.pdb
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\TransitPass.genruntimeconfig.cache
+C:\Users\mathe\Desktop\csharp-learning\02-oop-concepts\08-encapsulation\TransitPass\obj\Debug\net8.0\ref\TransitPass.dll

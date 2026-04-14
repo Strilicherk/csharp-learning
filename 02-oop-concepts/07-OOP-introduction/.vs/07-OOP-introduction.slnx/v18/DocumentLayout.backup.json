@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{70E598F0-18A1-41C7-9E30-131955248EB5}|Company\\Company.csproj|c:\\users\\mathe\\desktop\\csharp-learning\\02-oop-concepts\\07-oop-introduction\\company\\companytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E598F0-18A1-41C7-9E30-131955248EB5}|Company\\Company.csproj|solutionrelative:company\\companytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4196B3F5-B92C-8081-9E8B-66291FD0699A}|Company\\Company.csproj|c:\\users\\mathe\\desktop\\csharp-learning\\02-oop-concepts\\07-oop-introduction\\company\\companytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4196B3F5-B92C-8081-9E8B-66291FD0699A}|Company\\Company.csproj|solutionrelative:company\\companytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{70E598F0-18A1-41C7-9E30-131955248EB5}|Company\\Company.csproj|c:\\users\\mathe\\desktop\\csharp-learning\\02-oop-concepts\\07-oop-introduction\\company\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{70E598F0-18A1-41C7-9E30-131955248EB5}|Company\\Company.csproj|solutionrelative:company\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4196B3F5-B92C-8081-9E8B-66291FD0699A}|Company\\Company.csproj|c:\\users\\mathe\\desktop\\csharp-learning\\02-oop-concepts\\07-oop-introduction\\company\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4196B3F5-B92C-8081-9E8B-66291FD0699A}|Company\\Company.csproj|solutionrelative:company\\company.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Company\\CompanyTest.cs",
               "ToolTip": "C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\Company\\CompanyTest.cs",
               "RelativeToolTip": "Company\\CompanyTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-13T17:30:35.119Z",
               "EditorCaption": ""
@@ -43,8 +43,8 @@
               "Title": "Company.cs",
               "DocumentMoniker": "C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\Company\\Company.cs",
               "RelativeDocumentMoniker": "Company\\Company.cs",
-              "ToolTip": "C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\Company\\Company.cs*",
-              "RelativeToolTip": "Company\\Company.cs*",
+              "ToolTip": "C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\Company\\Company.cs",
+              "RelativeToolTip": "Company\\Company.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-13T17:02:58.732Z",
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "README.md",
               "ToolTip": "C:\\Users\\mathe\\Desktop\\csharp-learning\\02-oop-concepts\\07-OOP-introduction\\README.md",
               "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAA4AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
               "WhenOpened": "2026-04-13T14:12:05.433Z",
               "EditorCaption": ""
