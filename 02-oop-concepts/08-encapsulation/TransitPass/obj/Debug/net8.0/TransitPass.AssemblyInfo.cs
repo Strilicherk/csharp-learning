@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TransitPass")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b3ae117ec95d9d7d401a6ced621d537a7daaed4a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9adae61e6f70f658cf48ee1d10d4def1c094fcf0")]
 [assembly: System.Reflection.AssemblyProductAttribute("TransitPass")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TransitPass")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
